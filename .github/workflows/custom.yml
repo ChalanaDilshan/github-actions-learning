@@ -21,3 +21,6 @@ jobs:
           cd sample-app
           npm install
           npm test
+
+      - name: Access secret safely
+        run: echo "My secret code is ${{ secrets.TEST_SECRET }}"
